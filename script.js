@@ -40,3 +40,6 @@ console.log(shoppingList);
 // - Видаліть "eggs"
 shoppingList.splice(3, 1);
 console.log(shoppingList);
+
+
+

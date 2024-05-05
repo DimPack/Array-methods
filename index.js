@@ -46,15 +46,12 @@ const books = [
      * 
      * @returns {number}
      */
-    function lastIndexGenreRoman() {
-        for(let i = this.length -1; i >= 0; i--) {
-            if(this[i].genre === "Роман") {
-                return i;
-            }
-        }
+    function lastIndexGenre() {
+        const genre = 'Роман';
+        return this.findLastIndex(book => book.genre === genre);
+         
     }
-    console.log(lastIndexGenreRoman.call(books));
-
+    console.log(lastIndexGenre.call(books));
 
 //3) Поверніть масив книг з жанром Фентезі де кількість сторінок більше 600
     /**
